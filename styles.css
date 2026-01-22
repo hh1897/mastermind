@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+#colourBoard {
+
+    display: grid;
+}
+
+
+.boardRow {
+    border-color: black;
+    border-style: solid;
+    height: 13rem;
+    width: 30rem;
+    display: inline-flex;
+    
+}
+
+.boardColumn {
+    border-color: red;
+    border-style: solid;
+    height: 3rem;
+    width: 3rem;
+}
