@@ -43,6 +43,12 @@ function createBoard() {
             mark.id = "mark" + n;
             markContainer.appendChild(mark)
         }
+        var goButton = document.createElement("button");
+        goButton.id = "goButton" + i;
+        goButton.classList.add("goButtons");
+        goButton.innerText = "GO";
+        goButton.disabled = true;
+        row.appendChild(goButton);
         board.appendChild(row);
     }
 
@@ -99,7 +105,9 @@ function pinkSelected() {
 
 
 function getUserGuess(round) {
-
+    //activate current round GO button
+    var goButton = document.getElementById("goButton" + round);
+    goButton.disabled = false;
 }
 
 // guess the computers colours
