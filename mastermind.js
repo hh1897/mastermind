@@ -1,11 +1,15 @@
 // colour selection
 var colourSelection = "none";
+var round = 0;
+var completed = false;
 
 function optionSelected() {
     if (colourSelection == "none") {
         return;
     }
-
+    if (this.parentNode.id[8] != round) {
+        return;
+    }
     this.style.backgroundColor = colourSelection;
 }
 
@@ -93,8 +97,7 @@ function pinkSelected() {
     this.style.borderColor = "green";
 }
 
-var round = 0;
-var completed = false;
+
 function getUserGuess(round) {
 
 }
