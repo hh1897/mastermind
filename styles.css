@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: rgb(224, 222, 222);
 }
 
 #colourBoard {
@@ -11,8 +11,8 @@ body {
 .boardRow {
     border-color: black;
     border-style: solid;
-    height: 13rem;
-    width: 30rem;
+    height: 5rem;
+    width: 20rem;
     display: inline-flex;
     
 }
@@ -22,4 +22,53 @@ body {
     border-style: solid;
     height: 3rem;
     width: 3rem;
+}
+
+.colours {
+    border-color: black;
+    border-style: solid;
+    height: 2rem;
+    width: 2rem;
+}
+
+#redOption {
+    background-color: #FF0800;
+}
+
+#blueOption {
+    background-color: steelblue;
+}
+
+#yellowOption {
+    background-color: gold;
+}
+
+#greenOption {
+    background-color: forestgreen;
+}
+
+#purpleOption {
+    background-color: blueviolet;
+}
+
+
+
+#pinkOption {
+    background-color: pink;
+}
+
+#coloursContainer {
+    display: inline-flex;
+}
+
+.mark {
+    border-style: solid;
+    border-color: black;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+#markContainer {
+    width: 3rem;
+    display: flex;
 }
